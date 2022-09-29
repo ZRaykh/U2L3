@@ -15,21 +15,33 @@ public class Student {
     }
 
     // Sets gradYear to newGradYear
-    public void updateGradYear(int newGradYear){
+    public void updateGradYear(int newGradYear)
+    {
         gradYear = newGradYear ;
-
     }
     // Adds newTestScore to accumulatedTestScores
 // and increments testScoreCount by 1
     public void addTestScore(double newTestScore)
+    {
+        testScoreCount ++;
+        accumulatedTestScores += newTestScore;
+    }
 
     // Returns the number of test scores that have been added
     public int getTestScoreCount()
-
+    {
+        return testScoreCount;
+    }
     // Returns the Student’s average test score as the
 // quotient of accumulatedTestScores and testScoreCount
     public double averageTestScore()
+    {
+        return accumulatedTestScores/testScoreCount;
+    }
 
     // this method prints all info of a Student object to the console
     public void printStudentInfo()
+    {
+
+    }
 }
