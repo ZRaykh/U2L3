@@ -8,7 +8,8 @@ public class Student {
     private int testScoreCount = 0;
 
     //student class
-    public Student(String firstName, String lastName, int gradYear){
+    public Student(String firstName, String lastName, int gradYear)
+    {
         this.firstName = firstName;
         this.lastName = lastName;
         this. gradYear = gradYear;
@@ -42,6 +43,8 @@ public class Student {
     // this method prints all info of a Student object to the console
     public void printStudentInfo()
     {
-
+        System.out.println("Student first name:" + firstName);
+        System.out.println("Student last name:" + lastName);
+        System.out.println("Graduation year:" + gradYear);
     }
 }
