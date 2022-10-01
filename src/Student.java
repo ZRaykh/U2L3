@@ -20,6 +20,7 @@ public class Student {
     {
         gradYear = newGradYear ;
     }
+
     // Adds newTestScore to accumulatedTestScores
 // and increments testScoreCount by 1
     public void addTestScore(double newTestScore)
@@ -43,8 +44,9 @@ public class Student {
     // this method prints all info of a Student object to the console
     public void printStudentInfo()
     {
-        System.out.println("Student first name:" + firstName);
-        System.out.println("Student last name:" + lastName);
+        System.out.println("Student name:" + firstName + " " + lastName);
         System.out.println("Graduation year:" + gradYear);
+        System.out.println("Average test score:" + averageTestScore());
+        System.out.println("Number of tests averaged:" + testScoreCount);
     }
 }
