@@ -1,13 +1,14 @@
 public class ChatBot {
     public void greeting() {
         System.out.println("Hello, I am a chat bot!");
-        System.out.println("What would you like to do? For information enter: i");
+        System.out.println("What would you like to do? For information enter: help");
     }
 
     public void help() {
-        System.out.println("You can ask me about the weather: w");
-        System.out.println("You can tell me your favorite number: n");
-        System.out.println("I can even convert feet to meters!: c");
+        System.out.println("You can ask me about the weather: weather");
+        System.out.println("You can tell me your favorite number: favorite number");
+        System.out.println("I can even convert feet to meters!: feet to meters");
+        System.out.println("To end program, type: end");
     }
 
     public void weather() {
